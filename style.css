@@ -107,6 +107,7 @@ main {
 
 .login button {
     margin-top:  1rem;
+    margin-bottom: 2rem;
     padding-block: 1rem;
     width: 100%;
     background: var(--purple);
