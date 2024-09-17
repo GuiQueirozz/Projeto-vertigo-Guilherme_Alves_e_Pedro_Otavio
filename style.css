@@ -15,17 +15,18 @@ header{
     align-items: center;
 
     margin-bottom: 3.7rem;
-
+}
   :root {
     --gray-800: #1E293B;
     --gray-600: #475569;
     --gray-400: #94a3b8;
     --gray-200: #e2e8f0;
     --purple: #7c3aed;
+    --white: #fff;
   }  
 
 
-}
+
 
 main {
     padding-inline: 1.5rem;
@@ -78,9 +79,14 @@ main {
     border: 1px solid var(--gray-200);
     border-radius: 0.25rem;
     color: var(--gray-800);
+
 }
 
-.login input:hover,
+.login input::placeholder {
+    color: var(--gray-400); 
+      }
+
+.login input:hover ,
 .login input:focus { 
     outline: 1px solid var(--purple); 
 }
@@ -93,10 +99,22 @@ main {
 }
  
 
-.login input::placeholder {
-color: var(--gray-400);
-  }
+
 
 .login a:hover {
     text-decoration: underline;
+}
+
+.login button {
+    margin-top:  1rem;
+    padding-block: 1rem;
+    width: 100%;
+    background: var(--purple);
+    border: none;
+    border-radius: 0.25rem; 
+
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--white);
+
 }
